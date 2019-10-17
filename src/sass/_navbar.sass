@@ -1,0 +1,163 @@
+@media (min-width: 1200px)
+ .navbar
+  &-logo
+   transition: 0.3s
+   &:hover
+    cursor: pointer
+    color: #0DD1A2
+    svg
+     transition: 0.3s
+     fill: #0DD1A2
+  &-list
+   &__text
+    transition: 0.3s
+    &:hover
+     color: #0DD1A2
+  &-action
+   &__phone
+    &:hover
+     color: #0DD1A2
+ .navbar-button
+  &:hover
+   background: #0DD1A2
+.navbar
+ transition: 0.3s
+ &-block
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 100%
+  max-width: 1238px
+  margin: auto
+  padding-top: 21px
+  padding-bottom: 21px
+  text-transform: uppercase
+  +med
+  color: #fff
+ &-logo
+  width: 100%
+  max-width: 193px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  svg
+   fill: #fff
+  &__brand
+   font-size: 18px
+ &-list
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 620px
+  list-style: none
+  font-size: 15px
+  &__item
+   position: relative
+   &:after
+    content: '.'
+    position: absolute
+    top: 50%
+    right: -22px
+    transform: translateY(-70%)
+    color: #B0ACAC
+    +med
+    font-size: 20px
+   &:last-child
+    &:after
+     content: ''
+  &__text
+   text-decoration: none
+   color: #fff
+ &-action
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 100%
+  max-width: 255px
+  &__phone
+   +bold
+   font-size: 16px
+   text-decoration: none
+   color: #fff
+ &-mobile
+  display: none
+ &-button
+  padding: 9px 15px
+  border: 2px solid #0DD1A2
+  +bold
+  font-size: 14px
+ &_active
+  background-color: #0d1117
+@media (max-width: 1201px)
+ .navbar
+  &-list
+   width: 550px
+   &__item
+    &:after
+     right: -14px
+     transform: translateY(-80%)
+  &-block
+   justify-content: space-around
+  &-logo
+   max-width: 180px
+  &-action
+   max-width: 235px
+@media (max-width: 992px)
+ .navbar
+  &-block
+   display: none
+  &-mobile
+   display: flex
+   justify-content: space-between
+   align-items: center
+   width: 100%
+   padding: 20px 20px
+   color: #fff
+   +med
+   text-transform: uppercase
+   &-logo
+    display: flex
+    justify-content: center
+    align-items: center
+  &-logo
+   &__brand
+    margin-left: 20px
+    font-size: 14px
+  &-burger
+   margin-top: 6px
+   width: 24px
+   height: 16px
+   position: relative
+   span
+    position: absolute
+    width: 100%
+    height: 2px
+    background-color: #E0E0E0
+    &:before, &:after
+     display: block
+     content: ''
+     position: absolute
+     top: 50%
+     margin-top: -1px
+     height: 2px
+     transition: 0.3s
+     background-color: #E0E0E0
+    &:before
+     transform: translateY(-4px)
+     width: 100%
+    &:after
+     transform: translateY(4px)
+     width: 50%
+     right: 0
+   .burger
+    &-active
+     span
+      height: 0
+      &:before
+       transform: rotate(45deg)
+      &:after
+       width: 100%
+       transform: rotate(-45deg)
+@media (max-width: 769px)
+ .navbar-logo__brand
+  display: none

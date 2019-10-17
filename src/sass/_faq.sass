@@ -1,0 +1,178 @@
+@media (min-width: 1200px)
+ .faq
+  .accordion
+   .wrap
+    transition: 0.3s
+    &:hover
+     background-color: #0DD1A2
+.faq
+ position: relative
+ background: url('../img/work/bg-work-small.jpg') top center no-repeat
+ background-size: cover
+ height: auto
+ &-block
+  padding: 150px 0 85px 90px
+ .arrows
+  display: none
+ &__title
+  position: relative
+  +med
+  font-size: 44px
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+  &:after
+   content: ''
+   display: block
+   height: 3px
+   width: 100%
+   max-width: 616px
+   background-color: #0DD1A2
+   position: absolute
+   left: 0
+   bottom: -6px
+ .accordion
+  margin-top: 32px
+  dl
+   margin-bottom: 5px
+   position: relative
+   width: 100%
+   max-width: 904px
+   padding: 20px 0 24px 39px
+   background: #fff
+   opacity: 0.95
+   cursor: pointer
+   &:last-child
+    margin-bottom: 0
+  dt
+   display: flex
+   justify-content: space-between
+   position: relative
+   +med
+   font-size: 21px
+   color: #1c1c1c
+   opacity: 0.8
+   &:before
+    position: absolute
+    content: '.'
+    +bold
+    font-size: 24px
+    color: #0DD1A2
+    left: -10px
+    top: -30%
+  dd
+   display: none
+   max-width: 620px
+   margin-top: 20px
+   margin-bottom: 6px
+   +light
+   color: #1c1c1c
+   font-size: 15px
+   line-height: 150%
+  .wrap
+   display: flex
+   justify-content: center
+   align-items: center
+   position: absolute
+   right: 0
+   top: 0
+   background-color: #15B38D
+   height: 100%
+   max-height: 88px
+   width: 72px
+   +light
+   font-size: 48px
+   color: #fff
+  &-plus
+   transition: 0.3s
+   &-active
+    transform: rotate(45deg)
+ .boy
+  position: absolute
+  right: 77px
+  bottom: 0
+  width: 171px
+  height: 265px
+.hide-class
+ display: none
+@media (max-width: 1300px)
+ .faq
+  .boy
+   display: none
+@media (max-width: 1201px)
+ .faq
+  &-block
+   padding: 90px 0 60px 90px
+  .accordion
+   dl
+    max-width: 870px
+@media (max-width: 992px)
+ .faq
+  &__title
+   font-size: 38px
+   &:after
+    max-width: 550px
+  .accordion
+   .wrap
+    width: 50px
+   dl
+    max-width: 600px
+   dt
+    max-width: 500px
+    font-size: 19px
+    &:before
+     top: 0%
+   dd
+    max-width: 450px
+@media (max-width: 769px)
+ .faq
+  &-block
+   padding: 72px 0 40px 50px
+  .arrows
+   padding: 5px 11px 0 0
+   display: flex
+   align-items: center
+   float: right
+   +med
+   .counter
+    margin-right: 21px
+    .gray
+     color: #ccc
+   &__left, &__right
+    padding: 16px 26px
+    background-color: #1c1c1c
+   &__right
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+  &__title
+   font-size: 34px
+   &:after
+    max-width: 470px
+  .accordion
+   dl
+    max-width: 500px
+   dt
+    max-width: 400px
+   dd
+    max-width: 370px
+@media (max-width: 568px)
+ .faq
+  background: #0d1117
+  &-block
+   padding-left: 24px
+  &__title
+   max-width: 350px
+   font-size: 28px
+   &:after
+    max-width: 288px
+  .accordion
+   .wrap
+    width: 30px
+    font-size: 30px
+   dl
+    padding: 10px 0 10px 8px
+   dt
+    max-width: 256px
+    font-size: 17px
+    &:before
+     display: none
+   dd
+    max-width: 240px
+    margin-left: 0

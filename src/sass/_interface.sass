@@ -1,0 +1,55 @@
+*
+ box-sizing: border-box
+@media (min-width: 1200px)
+ .button
+  transition: 0.3s
+  &:hover
+   cursor: pointer
+ a
+  cursor: pointer
+  transition: 0.3s
+.button
+  background: transparent
+  color: #fff
+  margin: 0
+  outline: none
+  border: none
+main
+ position: relative
+body
+ color: #fff
+h1, h2, h3, h4, h5
+ margin: 0
+ padding: 0
+img
+ width: 100%
+ object-fit: cover
+input
+ display: block
+nav
+ position: fixed
+ margin: auto
+ width: 100%
+ z-index: 10
+ul
+ margin: 0
+ padding: 0
+dl
+ margin: 0
+dd
+ margin-left: 11px
+.input
+ padding: 15px 15px
+ font-size: 13px
+ &:focus
+  border: 2px solid #0DD1A2
+  outline: none
+input.invalid
+ border: 2px solid #F97676
+label.invalid
+ font-size: 12px
+ position: absolute
+ bottom: -17px
+ left: 25px
+ +reg
+ color: #F97676
