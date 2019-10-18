@@ -1,4 +1,9 @@
 $(document).ready(function () {
+ $('.burger').on('click', function () {
+  event.preventDefault();
+  $(this).toggleClass('burger-active');
+  $('.mobile-menu').toggleClass('mobile-menu-active');
+ });
  $('.slider').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -57,11 +62,6 @@ $(document).ready(function () {
   $('html, body').animate({
    scrollTop: $(target).offset().top
   }, 500);
- });
- $('.burger').on('click', function () {
-  event.preventDefault();
-  $(this).toggleClass('burger-active');
-  $('.mobile-menu').toggleClass('mobile-menu-active');
  });
  $(".accordion dl").on('click', function () {
   if ($(this).find(".accordion-plus").hasClass('accordion-plus-active')) {
